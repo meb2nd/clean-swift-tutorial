@@ -62,7 +62,12 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        configurePickers()
+    }
+    
+    func configurePickers()
+    {
+        shippingMethodTextField.inputView = shippingMethodPicker
     }
     
     // MARK: Do something
@@ -93,5 +98,60 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
     
     func displaySomething(viewModel: CreateOrder.Something.ViewModel) {
         //nameTextField.text = viewModel.name
+    }
+    
+    // MARK: CreateOrderViewController: UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let cell = tableView.cellForRow(at: indexPath) {
+            for textField in textFields {
+                if textField.isDescendant(of: cell) {
+                    textField.becomeFirstResponder()
+                }
+            }
+        }
+    }
+}
+
+// MARK: CreateOrderViewController: UITextFieldDelegate
+
+extension CreateOrderViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if let index = textFields.index(of: textField) {
+            if index < textFields.count - 1 {
+                let nextTextField = textFields[index + 1]
+                nextTextField.becomeFirstResponder()
+            }
+        }
+        return true
+    }
+}
+
+// MARK: CreateOrderViewController: UIPickerViewDataSource
+
+extension CreateOrderViewController: UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return interactor?.shippingMethods.count ?? 0
+    }
+}
+
+// MARK: CreateOrderViewController: UIPickerViewDelegate
+
+extension CreateOrderViewController: UIPickerViewDelegate {
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return interactor?.shippingMethods[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        shippingMethodTextField.text = interactor?.shippingMethods[row]
     }
 }
