@@ -163,16 +163,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-Sc-opD" userLabel="Street 1 Stack View">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-Sc-opD" userLabel="Shipment Street 1 Stack View">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKM-7Q-FN9" userLabel="Street 1 Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKM-7Q-FN9" userLabel="Shipment Street 1 Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="58.5" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-fg-bq3" userLabel="Street 1 Text Field">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-fg-bq3" userLabel="Shipment Street 1 Text Field">
                                                             <rect key="frame" x="66.5" y="0.0" width="276.5" height="22"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -182,10 +182,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="cUs-Sc-opD" firstAttribute="top" secondItem="Orw-65-vNI" secondAttribute="topMargin" identifier="street1StackViewTop" id="KFY-QO-5sf"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="cUs-Sc-opD" secondAttribute="bottom" identifier="street1StackViewBottom" id="Zg6-D1-cKl"/>
-                                                <constraint firstItem="cUs-Sc-opD" firstAttribute="leading" secondItem="Orw-65-vNI" secondAttribute="leadingMargin" identifier="street1StackViewLeading" id="pJh-wv-DQa"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="cUs-Sc-opD" secondAttribute="trailing" identifier="street1StackViewTrailing" id="rgS-kE-Fes"/>
+                                                <constraint firstItem="cUs-Sc-opD" firstAttribute="top" secondItem="Orw-65-vNI" secondAttribute="topMargin" identifier="shipmentStreet1StackViewTop" id="KFY-QO-5sf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cUs-Sc-opD" secondAttribute="bottom" identifier="shipmentStreet1StackViewBottom" id="Zg6-D1-cKl"/>
+                                                <constraint firstItem="cUs-Sc-opD" firstAttribute="leading" secondItem="Orw-65-vNI" secondAttribute="leadingMargin" identifier="shipmentStreet1StackViewLeading" id="pJh-wv-DQa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cUs-Sc-opD" secondAttribute="trailing" identifier="shipmentStreet1StackViewTrailing" id="rgS-kE-Fes"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -196,16 +196,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OBo-LI-EtC" userLabel="Street 2 Stack View">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OBo-LI-EtC" userLabel="Shipment Street 2 Stack View">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqJ-l9-UJn" userLabel="Street 2 Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqJ-l9-UJn" userLabel="Shipment Street 2 Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="61" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZu-LJ-k0J" userLabel="Street 2 Text Field">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZu-LJ-k0J" userLabel="Shipment Street 2 Text Field">
                                                             <rect key="frame" x="69" y="0.0" width="274" height="22"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -215,10 +215,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="OBo-LI-EtC" firstAttribute="top" secondItem="ozm-E3-5ic" secondAttribute="topMargin" identifier="street2StackViewTop" id="GFf-uC-eVW"/>
-                                                <constraint firstItem="OBo-LI-EtC" firstAttribute="leading" secondItem="ozm-E3-5ic" secondAttribute="leadingMargin" identifier="street2StackViewLeading" id="Uv5-yj-zxt"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="OBo-LI-EtC" secondAttribute="bottom" identifier="street2StackViewBottom" id="YIA-oh-X20"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="OBo-LI-EtC" secondAttribute="trailing" identifier="street2StackViewTraling" id="xGp-pN-JDi"/>
+                                                <constraint firstItem="OBo-LI-EtC" firstAttribute="top" secondItem="ozm-E3-5ic" secondAttribute="topMargin" identifier="shipmentStreet2StackViewTop" id="GFf-uC-eVW"/>
+                                                <constraint firstItem="OBo-LI-EtC" firstAttribute="leading" secondItem="ozm-E3-5ic" secondAttribute="leadingMargin" identifier="shipmentStreet2StackViewLeading" id="Uv5-yj-zxt"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="OBo-LI-EtC" secondAttribute="bottom" identifier="shipmentStreet2StackViewBottom" id="YIA-oh-X20"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OBo-LI-EtC" secondAttribute="trailing" identifier="shipmentStreet2StackViewTraling" id="xGp-pN-JDi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -229,16 +229,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-k6-UfA" userLabel="City Stack View">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-k6-UfA" userLabel="Shipment City Stack View">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAg-aS-uyr" userLabel="City Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAg-aS-uyr" userLabel="Shipment City Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="30.5" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLp-LQ-KfX" userLabel="City Text Field">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLp-LQ-KfX" userLabel="Shipment City Text Field">
                                                             <rect key="frame" x="38.5" y="0.0" width="304.5" height="22"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -248,10 +248,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ybS-k6-UfA" firstAttribute="leading" secondItem="4f0-cS-bSg" secondAttribute="leadingMargin" identifier="cityStackViewLeading" id="4We-u4-R2M"/>
-                                                <constraint firstItem="ybS-k6-UfA" firstAttribute="top" secondItem="4f0-cS-bSg" secondAttribute="topMargin" identifier="cityStackViewTop" id="eig-ml-mnF"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ybS-k6-UfA" secondAttribute="trailing" identifier="cityStackViewTrailing" id="xnj-m8-XHa"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ybS-k6-UfA" secondAttribute="bottom" identifier="cityStackViewBottom" id="yd4-Rb-n8k"/>
+                                                <constraint firstItem="ybS-k6-UfA" firstAttribute="leading" secondItem="4f0-cS-bSg" secondAttribute="leadingMargin" identifier="shipmentCityStackViewLeading" id="4We-u4-R2M"/>
+                                                <constraint firstItem="ybS-k6-UfA" firstAttribute="top" secondItem="4f0-cS-bSg" secondAttribute="topMargin" identifier="shipmentCityStackViewTop" id="eig-ml-mnF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ybS-k6-UfA" secondAttribute="trailing" identifier="shipmentCityStackViewTrailing" id="xnj-m8-XHa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ybS-k6-UfA" secondAttribute="bottom" identifier="shipmentCityStackViewBottom" id="yd4-Rb-n8k"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -262,16 +262,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-TY-vij" userLabel="State Stack View">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-TY-vij" userLabel="Shipment State Stack View">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaF-m7-M2Z" userLabel="State Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaF-m7-M2Z" userLabel="Shipment State Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="40.5" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqd-rg-lO2" userLabel="State Text Field">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqd-rg-lO2" userLabel="Shipment State Text Field">
                                                             <rect key="frame" x="48.5" y="0.0" width="294.5" height="22"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -281,10 +281,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Rke-TY-vij" secondAttribute="trailing" identifier="stateStackViewTrailing" id="A92-dC-PJE"/>
-                                                <constraint firstItem="Rke-TY-vij" firstAttribute="leading" secondItem="UtS-oR-2C4" secondAttribute="leadingMargin" identifier="stateStackViewLeading" id="Cfa-fI-ygw"/>
-                                                <constraint firstItem="Rke-TY-vij" firstAttribute="top" secondItem="UtS-oR-2C4" secondAttribute="topMargin" identifier="stateStackViewTop" id="XXG-UP-Lam"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Rke-TY-vij" secondAttribute="bottom" identifier="stateStackViewBottom" id="mRC-hD-80T"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rke-TY-vij" secondAttribute="trailing" identifier="shipmentStateStackViewTrailing" id="A92-dC-PJE"/>
+                                                <constraint firstItem="Rke-TY-vij" firstAttribute="leading" secondItem="UtS-oR-2C4" secondAttribute="leadingMargin" identifier="shipmentStateStackViewLeading" id="Cfa-fI-ygw"/>
+                                                <constraint firstItem="Rke-TY-vij" firstAttribute="top" secondItem="UtS-oR-2C4" secondAttribute="topMargin" identifier="shipmentStateStackViewTop" id="XXG-UP-Lam"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rke-TY-vij" secondAttribute="bottom" identifier="shipmentStateStackViewBottom" id="mRC-hD-80T"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -295,16 +295,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Y0-bz-LJY" userLabel="Zip Stack View">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Y0-bz-LJY" userLabel="Shipment Zip Stack View">
                                                     <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsM-gQ-nIy" userLabel="Zip Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsM-gQ-nIy" userLabel="Shipment Zip Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWQ-uE-QjU" userLabel="Zip Text Field">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWQ-uE-QjU" userLabel="Shipment Zip Text Field">
                                                             <rect key="frame" x="33" y="0.0" width="310" height="22"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -314,10 +314,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4Y0-bz-LJY" firstAttribute="top" secondItem="zQ3-Q2-KMx" secondAttribute="topMargin" identifier="zipStackViewTop" id="2zs-aO-fsZ"/>
-                                                <constraint firstItem="4Y0-bz-LJY" firstAttribute="leading" secondItem="zQ3-Q2-KMx" secondAttribute="leadingMargin" identifier="zipStackViewLeading" id="Vdu-on-cSK"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="4Y0-bz-LJY" secondAttribute="trailing" identifier="zipStackViewTrailing" id="rOi-WK-e4t"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="4Y0-bz-LJY" secondAttribute="bottom" identifier="zipStackViewBottom" id="yjE-Gl-q4A"/>
+                                                <constraint firstItem="4Y0-bz-LJY" firstAttribute="top" secondItem="zQ3-Q2-KMx" secondAttribute="topMargin" identifier="shipmentZipStackViewTop" id="2zs-aO-fsZ"/>
+                                                <constraint firstItem="4Y0-bz-LJY" firstAttribute="leading" secondItem="zQ3-Q2-KMx" secondAttribute="leadingMargin" identifier="shipmentZipStackViewLeading" id="Vdu-on-cSK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4Y0-bz-LJY" secondAttribute="trailing" identifier="shipmentZipStackViewTrailing" id="rOi-WK-e4t"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4Y0-bz-LJY" secondAttribute="bottom" identifier="shipmentZipStackViewBottom" id="yjE-Gl-q4A"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
