@@ -23,4 +23,21 @@ enum CreateOrder {
         struct ViewModel {
         }
     }
+    
+    // MARK: Format Expiration Date
+    
+    enum FormatExpirationDate
+    {
+        struct Request {
+            var date: Date
+        }
+        
+        struct Response {
+            var date: Date
+        }
+        
+        struct ViewModel {
+            var date: String
+        }
+    }
 }

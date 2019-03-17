@@ -13,10 +13,12 @@
 import UIKit
 
 protocol CreateOrderDisplayLogic: class {
+    func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel)
     func displaySomething(viewModel: CreateOrder.Something.ViewModel)
 }
 
 class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic {
+    
     var interactor: CreateOrderBusinessLogic?
     var router: (NSObjectProtocol & CreateOrderRoutingLogic & CreateOrderDataPassing)?
     
@@ -68,6 +70,7 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
     func configurePickers()
     {
         shippingMethodTextField.inputView = shippingMethodPicker
+        expirationDateTextField.inputView = expirationDatePicker
     }
     
     // MARK: Do something
@@ -89,6 +92,16 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
     @IBOutlet var expirationDatePicker: UIDatePicker!
     
     @IBAction func expirationDatePickerValueChanged(_ sender: Any) {
+        
+        let date = expirationDatePicker.date
+        let request = CreateOrder.FormatExpirationDate.Request(date: date)
+        interactor?.formatExpirationDate(request: request)
+    }
+    
+    func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel) {
+        
+        let date = viewModel.date
+        expirationDateTextField.text = date
     }
     
     func doSomething() {
