@@ -41,6 +41,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="4hG-CT-Xfb"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -74,6 +77,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="xmn-NM-aOu"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -107,6 +113,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="NHK-zV-907"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -140,6 +149,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="1GX-dR-xZn"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -346,6 +358,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="AHr-v4-DJb"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -383,6 +398,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="iWx-W1-TsH"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -416,6 +434,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="tV7-VI-lR0"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -449,6 +470,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="2EQ-dK-apI"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -505,17 +529,20 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-ct-bfj" userLabel="Billing Street 1 Stack View">
                                                     <rect key="frame" x="8" y="8" width="359" height="27.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQX-Zs-Z6n" userLabel="Street 1 Label">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQX-Zs-Z6n" userLabel="Billing Street 1 Label">
                                                             <rect key="frame" x="0.0" y="0.0" width="58.5" height="27.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8r-ux-GuQ" userLabel="Street 1 Text Field">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8r-ux-GuQ" userLabel="Billing Street 1 Text Field">
                                                             <rect key="frame" x="66.5" y="0.0" width="292.5" height="27.5"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="obF-eB-hn7"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -549,6 +576,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="G3h-RG-Jkt"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -582,6 +612,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="2wt-6o-EV4"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -615,6 +648,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="Jzl-pb-B02"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -648,6 +684,9 @@
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="Hr9-YV-zWT" id="EJN-dK-riM"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -669,8 +708,50 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Create Order" id="Hr9-YV-zWT"/>
+                    <connections>
+                        <outlet property="expirationDatePicker" destination="NRu-dP-LsP" id="jau-MO-BDU"/>
+                        <outlet property="expirationDateTextField" destination="tPU-FB-BPS" id="bbJ-gh-Rd8"/>
+                        <outlet property="shippingMethodPicker" destination="e9d-Vs-UgV" id="dW7-x8-MKb"/>
+                        <outlet property="shippingMethodTextField" destination="fkv-MQ-aMV" id="qsW-xg-i4B"/>
+                        <outletCollection property="textFields" destination="BNd-2P-bDT" collectionClass="NSMutableArray" id="BNA-gy-8TH"/>
+                        <outletCollection property="textFields" destination="7ev-Cd-Qh2" collectionClass="NSMutableArray" id="YAr-SU-Xaf"/>
+                        <outletCollection property="textFields" destination="Nz5-ir-R21" collectionClass="NSMutableArray" id="jAw-0h-Qi8"/>
+                        <outletCollection property="textFields" destination="RiV-bI-1JR" collectionClass="NSMutableArray" id="pWh-4a-YIG"/>
+                        <outletCollection property="textFields" destination="Zgy-fg-bq3" collectionClass="NSMutableArray" id="xQz-9N-sau"/>
+                        <outletCollection property="textFields" destination="FZu-LJ-k0J" collectionClass="NSMutableArray" id="MTh-9N-lJc"/>
+                        <outletCollection property="textFields" destination="gLp-LQ-KfX" collectionClass="NSMutableArray" id="gGw-CZ-v25"/>
+                        <outletCollection property="textFields" destination="tqd-rg-lO2" collectionClass="NSMutableArray" id="Buf-yF-t60"/>
+                        <outletCollection property="textFields" destination="GWQ-uE-QjU" collectionClass="NSMutableArray" id="Ug6-6L-iSe"/>
+                        <outletCollection property="textFields" destination="fkv-MQ-aMV" collectionClass="NSMutableArray" id="ohf-K4-9le"/>
+                        <outletCollection property="textFields" destination="KId-V7-SH4" collectionClass="NSMutableArray" id="J6M-Lf-gWB"/>
+                        <outletCollection property="textFields" destination="tPU-FB-BPS" collectionClass="NSMutableArray" id="xkT-eH-Osl"/>
+                        <outletCollection property="textFields" destination="lqW-aM-5Yn" collectionClass="NSMutableArray" id="59I-8t-Q7Q"/>
+                        <outletCollection property="textFields" destination="L8r-ux-GuQ" collectionClass="NSMutableArray" id="BWl-DK-HhV"/>
+                        <outletCollection property="textFields" destination="djb-0u-91e" collectionClass="NSMutableArray" id="lse-Tl-jq7"/>
+                        <outletCollection property="textFields" destination="yLI-m1-DlQ" collectionClass="NSMutableArray" id="2N1-eq-Hej"/>
+                        <outletCollection property="textFields" destination="jDV-AJ-GIE" collectionClass="NSMutableArray" id="Cn1-4P-kxS"/>
+                        <outletCollection property="textFields" destination="6iF-4x-Rrf" collectionClass="NSMutableArray" id="UPH-bn-Z1K"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qk-fT-at8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="NRu-dP-LsP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <date key="date" timeIntervalSinceReferenceDate="574524846.74723303">
+                        <!--2019-03-17 14:14:06 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="expirationDatePickerValueChanged:" destination="viC-AM-ROS" eventType="valueChanged" id="dLO-ak-w7n"/>
+                    </connections>
+                </datePicker>
+                <pickerView contentMode="scaleToFill" id="e9d-Vs-UgV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="Hr9-YV-zWT" id="Rfl-16-ccf"/>
+                        <outlet property="delegate" destination="Hr9-YV-zWT" id="cHe-qA-Fu8"/>
+                    </connections>
+                </pickerView>
             </objects>
             <point key="canvasLocation" x="1488.8" y="-602.24887556221893"/>
         </scene>

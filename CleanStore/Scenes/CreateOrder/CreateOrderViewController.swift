@@ -69,6 +69,23 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
     
     //@IBOutlet weak var nameTextField: UITextField!
     
+    // MARK: Text fields
+    
+    @IBOutlet var textFields: [UITextField]!
+    
+    // MARK: Shipping method
+    
+    @IBOutlet weak var shippingMethodTextField: UITextField!
+    @IBOutlet var shippingMethodPicker: UIPickerView!
+    
+    // MARK: Expiration date
+    
+    @IBOutlet weak var expirationDateTextField: UITextField!
+    @IBOutlet var expirationDatePicker: UIDatePicker!
+    
+    @IBAction func expirationDatePickerValueChanged(_ sender: Any) {
+    }
+    
     func doSomething() {
         let request = CreateOrder.Something.Request()
         interactor?.doSomething(request: request)
