@@ -1,24 +1,696 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Create Order-->
+        <scene sceneID="eFh-9O-I3t">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController storyboardIdentifier="CreateOrderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="viC-AM-ROS" customClass="CreateOrderViewController" customModule="CleanStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="COW-Dd-0KE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="Customer Contact Info" id="aMP-8b-3QQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Dla-Pj-7hu">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dla-Pj-7hu" id="5YW-Jh-mVg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rYF-yR-Fy7" userLabel="First Name Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aez-57-I4A" userLabel="First Name Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNd-2P-bDT" userLabel="First Name Text Field">
+                                                            <rect key="frame" x="91" y="0.0" width="252" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rYF-yR-Fy7" firstAttribute="leading" secondItem="5YW-Jh-mVg" secondAttribute="leadingMargin" identifier="firstNameStackViewLeading" id="bO4-QA-HEU"/>
+                                                <constraint firstItem="rYF-yR-Fy7" firstAttribute="top" secondItem="5YW-Jh-mVg" secondAttribute="topMargin" identifier="firstNameStackViewTop" id="cZe-j9-PoD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rYF-yR-Fy7" secondAttribute="bottom" identifier="firstNameStackViewBottom" id="fnj-Ey-pCt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rYF-yR-Fy7" secondAttribute="trailing" identifier="firstNameStackViewTrailing" id="pbT-dC-wqw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hgU-b4-IO5">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hgU-b4-IO5" id="QQb-lC-hTj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="muj-0S-rhU" userLabel="Last Name Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb9-XG-0Yt" userLabel="Last Name Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="82" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ev-Cd-Qh2" userLabel="Last Name Text Field">
+                                                            <rect key="frame" x="90" y="0.0" width="253" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="muj-0S-rhU" firstAttribute="top" secondItem="QQb-lC-hTj" secondAttribute="topMargin" identifier="lastNameStackViewTop" id="AS0-Y7-gsB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="muj-0S-rhU" secondAttribute="trailing" identifier="lastNameStackViewTrailing" id="GDN-9H-sRA"/>
+                                                <constraint firstItem="muj-0S-rhU" firstAttribute="leading" secondItem="QQb-lC-hTj" secondAttribute="leadingMargin" identifier="lastNameStackViewLeading" id="Mct-70-ICD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="muj-0S-rhU" secondAttribute="bottom" identifier="lastNameStackViewBottom" id="m4R-NQ-hy7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="X8P-6m-i1s">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X8P-6m-i1s" id="0Es-Yv-w9Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ks2-VL-WaO" userLabel="Phone Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iP-aR-CsD" userLabel="Phone Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="49" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nz5-ir-R21" userLabel="Phone Text Field">
+                                                            <rect key="frame" x="57" y="0.0" width="286" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ks2-VL-WaO" firstAttribute="leading" secondItem="0Es-Yv-w9Q" secondAttribute="leadingMargin" identifier="phoneStackViewLeading" id="5LG-mv-0UD"/>
+                                                <constraint firstItem="Ks2-VL-WaO" firstAttribute="top" secondItem="0Es-Yv-w9Q" secondAttribute="topMargin" identifier="phoneStackViewTop" id="HIk-en-e5V"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ks2-VL-WaO" secondAttribute="bottom" identifier="phoneStackViewBottom" id="a73-H3-j6A"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ks2-VL-WaO" secondAttribute="trailing" identifier="phoneStackViewTrailing" id="wuJ-iw-E8j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wUo-rV-00E">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wUo-rV-00E" id="8Su-ef-NJk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ICs-Zp-rdg" userLabel="Email Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peP-2v-13c" userLabel="Email Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="41" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiV-bI-1JR" userLabel="Email Text Field">
+                                                            <rect key="frame" x="49" y="0.0" width="294" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ICs-Zp-rdg" firstAttribute="top" secondItem="8Su-ef-NJk" secondAttribute="topMargin" identifier="emailStackViewTop" id="6sB-Jr-xkV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ICs-Zp-rdg" secondAttribute="trailing" identifier="emailStackViewTrailing" id="FYh-b4-qs1"/>
+                                                <constraint firstItem="ICs-Zp-rdg" firstAttribute="leading" secondItem="8Su-ef-NJk" secondAttribute="leadingMargin" identifier="emailStackViewLeading" id="PY8-Sh-qRq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ICs-Zp-rdg" secondAttribute="bottom" identifier="emailStackViewBottom" id="SHw-6H-kfS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Shipment Address" id="bvx-eT-27E">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VHE-1g-9dI">
+                                        <rect key="frame" x="0.0" y="232" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VHE-1g-9dI" id="Orw-65-vNI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-Sc-opD" userLabel="Street 1 Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKM-7Q-FN9" userLabel="Street 1 Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="58.5" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-fg-bq3" userLabel="Street 1 Text Field">
+                                                            <rect key="frame" x="66.5" y="0.0" width="276.5" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cUs-Sc-opD" firstAttribute="top" secondItem="Orw-65-vNI" secondAttribute="topMargin" identifier="street1StackViewTop" id="KFY-QO-5sf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cUs-Sc-opD" secondAttribute="bottom" identifier="street1StackViewBottom" id="Zg6-D1-cKl"/>
+                                                <constraint firstItem="cUs-Sc-opD" firstAttribute="leading" secondItem="Orw-65-vNI" secondAttribute="leadingMargin" identifier="street1StackViewLeading" id="pJh-wv-DQa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cUs-Sc-opD" secondAttribute="trailing" identifier="street1StackViewTrailing" id="rgS-kE-Fes"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Zux-Dk-XCF">
+                                        <rect key="frame" x="0.0" y="276" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zux-Dk-XCF" id="ozm-E3-5ic">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OBo-LI-EtC" userLabel="Street 2 Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqJ-l9-UJn" userLabel="Street 2 Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZu-LJ-k0J" userLabel="Street 2 Text Field">
+                                                            <rect key="frame" x="69" y="0.0" width="274" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OBo-LI-EtC" firstAttribute="top" secondItem="ozm-E3-5ic" secondAttribute="topMargin" identifier="street2StackViewTop" id="GFf-uC-eVW"/>
+                                                <constraint firstItem="OBo-LI-EtC" firstAttribute="leading" secondItem="ozm-E3-5ic" secondAttribute="leadingMargin" identifier="street2StackViewLeading" id="Uv5-yj-zxt"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="OBo-LI-EtC" secondAttribute="bottom" identifier="street2StackViewBottom" id="YIA-oh-X20"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OBo-LI-EtC" secondAttribute="trailing" identifier="street2StackViewTraling" id="xGp-pN-JDi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NLw-y3-v30">
+                                        <rect key="frame" x="0.0" y="320" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NLw-y3-v30" id="4f0-cS-bSg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-k6-UfA" userLabel="City Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAg-aS-uyr" userLabel="City Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30.5" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLp-LQ-KfX" userLabel="City Text Field">
+                                                            <rect key="frame" x="38.5" y="0.0" width="304.5" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ybS-k6-UfA" firstAttribute="leading" secondItem="4f0-cS-bSg" secondAttribute="leadingMargin" identifier="cityStackViewLeading" id="4We-u4-R2M"/>
+                                                <constraint firstItem="ybS-k6-UfA" firstAttribute="top" secondItem="4f0-cS-bSg" secondAttribute="topMargin" identifier="cityStackViewTop" id="eig-ml-mnF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ybS-k6-UfA" secondAttribute="trailing" identifier="cityStackViewTrailing" id="xnj-m8-XHa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ybS-k6-UfA" secondAttribute="bottom" identifier="cityStackViewBottom" id="yd4-Rb-n8k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eK3-eF-yUy">
+                                        <rect key="frame" x="0.0" y="364" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eK3-eF-yUy" id="UtS-oR-2C4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-TY-vij" userLabel="State Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaF-m7-M2Z" userLabel="State Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40.5" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqd-rg-lO2" userLabel="State Text Field">
+                                                            <rect key="frame" x="48.5" y="0.0" width="294.5" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rke-TY-vij" secondAttribute="trailing" identifier="stateStackViewTrailing" id="A92-dC-PJE"/>
+                                                <constraint firstItem="Rke-TY-vij" firstAttribute="leading" secondItem="UtS-oR-2C4" secondAttribute="leadingMargin" identifier="stateStackViewLeading" id="Cfa-fI-ygw"/>
+                                                <constraint firstItem="Rke-TY-vij" firstAttribute="top" secondItem="UtS-oR-2C4" secondAttribute="topMargin" identifier="stateStackViewTop" id="XXG-UP-Lam"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rke-TY-vij" secondAttribute="bottom" identifier="stateStackViewBottom" id="mRC-hD-80T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="D1V-1n-9DF">
+                                        <rect key="frame" x="0.0" y="408" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D1V-1n-9DF" id="zQ3-Q2-KMx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Y0-bz-LJY" userLabel="Zip Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsM-gQ-nIy" userLabel="Zip Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWQ-uE-QjU" userLabel="Zip Text Field">
+                                                            <rect key="frame" x="33" y="0.0" width="310" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Y0-bz-LJY" firstAttribute="top" secondItem="zQ3-Q2-KMx" secondAttribute="topMargin" identifier="zipStackViewTop" id="2zs-aO-fsZ"/>
+                                                <constraint firstItem="4Y0-bz-LJY" firstAttribute="leading" secondItem="zQ3-Q2-KMx" secondAttribute="leadingMargin" identifier="zipStackViewLeading" id="Vdu-on-cSK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4Y0-bz-LJY" secondAttribute="trailing" identifier="zipStackViewTrailing" id="rOi-WK-e4t"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4Y0-bz-LJY" secondAttribute="bottom" identifier="zipStackViewBottom" id="yjE-Gl-q4A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Shipment Method" id="uwv-4q-tZN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2if-Br-fbg">
+                                        <rect key="frame" x="0.0" y="480" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2if-Br-fbg" id="St2-Lx-gGR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wF8-iu-tID" userLabel="Shipping Method Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-VH-v9A" userLabel="Shipping Method Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="121" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fkv-MQ-aMV" userLabel="Shipping Method Text Field">
+                                                            <rect key="frame" x="129" y="0.0" width="214" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wF8-iu-tID" secondAttribute="trailing" identifier="shippingMethodStackViewTrailing" id="4Ld-Pa-jW8"/>
+                                                <constraint firstItem="wF8-iu-tID" firstAttribute="top" secondItem="St2-Lx-gGR" secondAttribute="topMargin" identifier="shippingMethodStackViewTop" id="7he-UO-V2e"/>
+                                                <constraint firstItem="wF8-iu-tID" firstAttribute="leading" secondItem="St2-Lx-gGR" secondAttribute="leadingMargin" identifier="shippingMethodStackViewLeading" id="IeM-mG-92b"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wF8-iu-tID" secondAttribute="bottom" identifier="shippingMethodStackViewBottom" id="c0O-Qc-snU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Payment Information" id="3xT-G7-cva">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UdO-lT-cdT">
+                                        <rect key="frame" x="0.0" y="552" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UdO-lT-cdT" id="9mp-bl-goe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-Ht-2l9" userLabel="Credit Card Number Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-JH-eyi" userLabel="Credit Card Number Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="154" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KId-V7-SH4" userLabel="Credit Card Number Text Field">
+                                                            <rect key="frame" x="162" y="0.0" width="181" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="u0c-Ht-2l9" secondAttribute="bottom" identifier="creditCardNumberStackViewBottom" id="1hz-hM-yvo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="u0c-Ht-2l9" secondAttribute="trailing" identifier="creditCardNumberStackViewTrailing" id="AdO-Px-h0c"/>
+                                                <constraint firstItem="u0c-Ht-2l9" firstAttribute="top" secondItem="9mp-bl-goe" secondAttribute="topMargin" identifier="creditCardNumberStackViewTop" id="T3H-lX-Ch6"/>
+                                                <constraint firstItem="u0c-Ht-2l9" firstAttribute="leading" secondItem="9mp-bl-goe" secondAttribute="leadingMargin" identifier="creditCardNumberStackViewLeading" id="hZi-Dr-CWV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KJW-gN-aMa">
+                                        <rect key="frame" x="0.0" y="596" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KJW-gN-aMa" id="vMM-sK-8K5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-MR-pqi" userLabel="Expiration Date Stack View">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWk-WN-ee4" userLabel="Expiration Date Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="116.5" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tPU-FB-BPS" userLabel="Expiration Date Text Field">
+                                                            <rect key="frame" x="124.5" y="0.0" width="218.5" height="22"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yA4-MR-pqi" secondAttribute="trailing" id="UnO-dq-Nrc"/>
+                                                <constraint firstItem="yA4-MR-pqi" firstAttribute="leading" secondItem="vMM-sK-8K5" secondAttribute="leadingMargin" id="b5Q-Y2-KMy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yA4-MR-pqi" secondAttribute="bottom" id="gxe-PE-517"/>
+                                                <constraint firstItem="yA4-MR-pqi" firstAttribute="top" secondItem="vMM-sK-8K5" secondAttribute="topMargin" id="rew-A5-NgX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cbc-BJ-Ce1">
+                                        <rect key="frame" x="0.0" y="640" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbc-BJ-Ce1" id="6MW-cA-hO8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bwb-mi-d6z" userLabel="CVV Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-Bj-b3i" userLabel="CVV Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqW-aM-5Yn" userLabel="CVV Text Field">
+                                                            <rect key="frame" x="42" y="0.0" width="317" height="27.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bwb-mi-d6z" firstAttribute="top" secondItem="6MW-cA-hO8" secondAttribute="topMargin" identifier="cvvStackViewTop" id="FDv-3l-zAq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bwb-mi-d6z" secondAttribute="trailing" identifier="cvvStackViewTrailing" id="Zky-VJ-DhG"/>
+                                                <constraint firstItem="Bwb-mi-d6z" firstAttribute="leading" secondItem="6MW-cA-hO8" secondAttribute="leadingMargin" identifier="cvvStackViewLeading" id="o9v-Hl-XgT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bwb-mi-d6z" secondAttribute="bottom" identifier="cvvStackViewBottom" id="zPe-Dx-WUr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Billing Address" id="64O-7F-J4s">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Irt-B8-QYP">
+                                        <rect key="frame" x="0.0" y="712" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Irt-B8-QYP" id="lug-Ip-bAe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="scq-CO-hxK" userLabel="Same As Shipping Address Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same as shipping address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WY-Na-L14" userLabel="Same As Shipping Address Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="302" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZoF-0h-n4e" userLabel="Same As Shipping Address Switch">
+                                                            <rect key="frame" x="310" y="0.0" width="51" height="27.5"/>
+                                                        </switch>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="scq-CO-hxK" firstAttribute="top" secondItem="lug-Ip-bAe" secondAttribute="topMargin" identifier="sameAsShippingAddressStackViewTop" id="4wI-8V-kUi"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="scq-CO-hxK" secondAttribute="bottom" identifier="sameAsShippingAddressStackViewBottom" id="8lh-Wg-MWT"/>
+                                                <constraint firstItem="scq-CO-hxK" firstAttribute="leading" secondItem="lug-Ip-bAe" secondAttribute="leadingMargin" identifier="sameAsShippingAddressStackViewLeading" id="Q9m-7v-VLL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="scq-CO-hxK" secondAttribute="trailing" identifier="sameAsShippingAddressStackViewTrailing" id="RGc-Ur-N9P"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vf3-fA-ACE">
+                                        <rect key="frame" x="0.0" y="756" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vf3-fA-ACE" id="aFk-RM-OFQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-ct-bfj" userLabel="Billing Street 1 Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQX-Zs-Z6n" userLabel="Street 1 Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="58.5" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8r-ux-GuQ" userLabel="Street 1 Text Field">
+                                                            <rect key="frame" x="66.5" y="0.0" width="292.5" height="27.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rms-ct-bfj" firstAttribute="leading" secondItem="aFk-RM-OFQ" secondAttribute="leadingMargin" identifier="billingAddressStreet1StackViewLeading" id="ANz-YD-b1J"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rms-ct-bfj" secondAttribute="trailing" identifier="billingAddressStreet1StackViewTrailing" id="XXp-39-fei"/>
+                                                <constraint firstItem="Rms-ct-bfj" firstAttribute="top" secondItem="aFk-RM-OFQ" secondAttribute="topMargin" identifier="billingAddressStreet1StackViewTop" id="Y49-Py-edA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rms-ct-bfj" secondAttribute="bottom" identifier="billingAddressStreet1StackViewBottom" id="vRw-sq-JcM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aJb-gV-1hK">
+                                        <rect key="frame" x="0.0" y="800" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aJb-gV-1hK" id="Qst-ZS-Ruj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TyX-Rh-W2D" userLabel="Billing Street 2 Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMO-UM-IZd" userLabel="Billing Street 2 Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="djb-0u-91e" userLabel="Billing Street 2 Text Field">
+                                                            <rect key="frame" x="69" y="0.0" width="290" height="27.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TyX-Rh-W2D" secondAttribute="bottom" identifier="billingAddressStreet2StackViewBottom" id="Bqw-sD-tfR"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TyX-Rh-W2D" secondAttribute="trailing" identifier="billingAddressStreet2StackViewTrailing" id="KpK-S0-ygI"/>
+                                                <constraint firstItem="TyX-Rh-W2D" firstAttribute="top" secondItem="Qst-ZS-Ruj" secondAttribute="topMargin" identifier="billingAddressStreet1StackViewTop" id="Sts-Yt-MfF"/>
+                                                <constraint firstItem="TyX-Rh-W2D" firstAttribute="leading" secondItem="Qst-ZS-Ruj" secondAttribute="leadingMargin" identifier="billingAddressStreet1StackViewLeading" id="Zo1-Fy-ZK1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KWc-Ag-UHw">
+                                        <rect key="frame" x="0.0" y="844" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KWc-Ag-UHw" id="NTy-e4-cDw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-BC-jGn" userLabel="Billing City Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5B-y7-ppM" userLabel="Billing City Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30.5" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-m1-DlQ" userLabel="Billing City Text Field">
+                                                            <rect key="frame" x="38.5" y="0.0" width="320.5" height="27.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tbh-BC-jGn" firstAttribute="top" secondItem="NTy-e4-cDw" secondAttribute="topMargin" identifier="billingCityStackViewTop" id="IBy-8O-uMq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="tbh-BC-jGn" secondAttribute="trailing" identifier="billingCityStackViewTrailing" id="MCQ-fc-Exb"/>
+                                                <constraint firstItem="tbh-BC-jGn" firstAttribute="leading" secondItem="NTy-e4-cDw" secondAttribute="leadingMargin" identifier="billingCityStackViewLeading" id="Yi4-kH-xD5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tbh-BC-jGn" secondAttribute="bottom" identifier="billingCityStackViewBottom" id="l25-ir-DWs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Jbt-EI-D3s">
+                                        <rect key="frame" x="0.0" y="888" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jbt-EI-D3s" id="vCI-B6-uI1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-1e-bPY" userLabel="Billing State Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogK-AF-jXX" userLabel="Billing State Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40.5" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jDV-AJ-GIE" userLabel="Billing State Text Field">
+                                                            <rect key="frame" x="48.5" y="0.0" width="310.5" height="27.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Uqj-1e-bPY" secondAttribute="trailing" identifier="billingStateStackViewTrailing" id="7Yk-aZ-grI"/>
+                                                <constraint firstItem="Uqj-1e-bPY" firstAttribute="leading" secondItem="vCI-B6-uI1" secondAttribute="leadingMargin" identifier="billingStateStackViewLeading" id="L4p-1h-J58"/>
+                                                <constraint firstItem="Uqj-1e-bPY" firstAttribute="top" secondItem="vCI-B6-uI1" secondAttribute="topMargin" identifier="billingStateStackViewTop" id="UJp-Op-LTy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Uqj-1e-bPY" secondAttribute="bottom" identifier="billingStateStackViewBottom" id="tbZ-UF-hG9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fkr-Bw-224">
+                                        <rect key="frame" x="0.0" y="932" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fkr-Bw-224" id="qpO-MU-ygl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MAj-Nc-W3o" userLabel="Billing Zip Stack View">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9F-2K-O3r" userLabel="Billing Zip Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6iF-4x-Rrf" userLabel="Billing Zip Text Field">
+                                                            <rect key="frame" x="33" y="0.0" width="326" height="27.5"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MAj-Nc-W3o" secondAttribute="trailing" identifier="billingZiptackViewTrailing" id="0hz-Iy-qGD"/>
+                                                <constraint firstItem="MAj-Nc-W3o" firstAttribute="top" secondItem="qpO-MU-ygl" secondAttribute="topMargin" identifier="billingZiptackViewTop" id="LvJ-lP-4dF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MAj-Nc-W3o" secondAttribute="bottom" identifier="billingZiptackViewBottom" id="PIF-wg-nou"/>
+                                                <constraint firstItem="MAj-Nc-W3o" firstAttribute="leading" secondItem="qpO-MU-ygl" secondAttribute="leadingMargin" identifier="billingZiptackViewLeading" id="VPs-et-ZbJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="viC-AM-ROS" id="RDh-pi-FDf"/>
+                            <outlet property="delegate" destination="viC-AM-ROS" id="gQ5-fh-wzq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Create Order" id="Hr9-YV-zWT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qk-fT-at8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1488.8" y="-602.24887556221893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yrt-2n-k8f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PGy-64-F5n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zkp-bP-LiO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="viC-AM-ROS" kind="relationship" relationship="rootViewController" id="oc3-gr-fEq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7MG-Iv-Fzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="-602.24887556221893"/>
         </scene>
     </scenes>
 </document>
