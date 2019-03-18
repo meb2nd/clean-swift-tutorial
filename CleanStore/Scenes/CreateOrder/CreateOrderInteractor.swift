@@ -27,9 +27,9 @@ class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore {
     var presenter: CreateOrderPresentationLogic?
     var worker: CreateOrderWorker?
     var shippingMethods = [
-        "Standard Shipping",
-        "Two-Day Shipping ",
-        "One-Day Shipping "
+        ShipmentMethod(speed: .Standard).toString(),
+        ShipmentMethod(speed: .OneDay).toString(),
+        ShipmentMethod(speed: .TwoDay).toString()
     ]
     //var name: String = ""
     
