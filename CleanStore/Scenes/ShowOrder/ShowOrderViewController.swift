@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ShowOrderDisplayLogic: class {
-    func displaySomething(viewModel: ShowOrder.GetOrder.ViewModel)
+    func displayOrder(viewModel: ShowOrder.GetOrder.ViewModel)
 }
 
 class ShowOrderViewController: UIViewController, ShowOrderDisplayLogic {
@@ -80,7 +80,7 @@ class ShowOrderViewController: UIViewController, ShowOrderDisplayLogic {
         interactor?.getOrder(request: request)
     }
     
-    func displaySomething(viewModel: ShowOrder.GetOrder.ViewModel) {
+    func displayOrder(viewModel: ShowOrder.GetOrder.ViewModel) {
         
         let displayedOrder = viewModel.displayedOrder
         orderIDLabel.text = displayedOrder.id

@@ -42,6 +42,6 @@ class ShowOrderPresenter: ShowOrderPresentationLogic {
         let displayedOrder = ShowOrder.GetOrder.ViewModel.DisplayedOrder(id: order.id!, date: date, email: order.email,
                                                                          name: "\(order.firstName) \(order.lastName)", total: total)
         let viewModel = ShowOrder.GetOrder.ViewModel(displayedOrder: displayedOrder)
-        viewController?.displaySomething(viewModel: viewModel)
+        viewController?.displayOrder(viewModel: viewModel)
     }
 }
