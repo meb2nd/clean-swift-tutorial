@@ -44,6 +44,18 @@
 		121F8B92223EDCB5005BB609 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B90223EDCB5005BB609 /* Order.swift */; };
 		121F8B95223EE23B005BB609 /* OrdersMemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B94223EE23B005BB609 /* OrdersMemStore.swift */; };
 		121F8B96223EE23B005BB609 /* OrdersMemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B94223EE23B005BB609 /* OrdersMemStore.swift */; };
+		121F8B9E223F3957005BB609 /* ShowOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B98223F3957005BB609 /* ShowOrderPresenter.swift */; };
+		121F8B9F223F3957005BB609 /* ShowOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B98223F3957005BB609 /* ShowOrderPresenter.swift */; };
+		121F8BA0223F3957005BB609 /* ShowOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B99223F3957005BB609 /* ShowOrderWorker.swift */; };
+		121F8BA1223F3957005BB609 /* ShowOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B99223F3957005BB609 /* ShowOrderWorker.swift */; };
+		121F8BA2223F3957005BB609 /* ShowOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9A223F3957005BB609 /* ShowOrderRouter.swift */; };
+		121F8BA3223F3957005BB609 /* ShowOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9A223F3957005BB609 /* ShowOrderRouter.swift */; };
+		121F8BA4223F3957005BB609 /* ShowOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9B223F3957005BB609 /* ShowOrderModels.swift */; };
+		121F8BA5223F3957005BB609 /* ShowOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9B223F3957005BB609 /* ShowOrderModels.swift */; };
+		121F8BA6223F3957005BB609 /* ShowOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */; };
+		121F8BA7223F3957005BB609 /* ShowOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */; };
+		121F8BA8223F3957005BB609 /* ShowOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */; };
+		121F8BA9223F3957005BB609 /* ShowOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +104,12 @@
 		121F8B8C223ED9EE005BB609 /* OrdersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersWorker.swift; sourceTree = "<group>"; };
 		121F8B90223EDCB5005BB609 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		121F8B94223EE23B005BB609 /* OrdersMemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersMemStore.swift; sourceTree = "<group>"; };
+		121F8B98223F3957005BB609 /* ShowOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderPresenter.swift; sourceTree = "<group>"; };
+		121F8B99223F3957005BB609 /* ShowOrderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderWorker.swift; sourceTree = "<group>"; };
+		121F8B9A223F3957005BB609 /* ShowOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderRouter.swift; sourceTree = "<group>"; };
+		121F8B9B223F3957005BB609 /* ShowOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderModels.swift; sourceTree = "<group>"; };
+		121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderViewController.swift; sourceTree = "<group>"; };
+		121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +195,7 @@
 		121F8B64223DD1A5005BB609 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				121F8B97223F3906005BB609 /* ShowOrder */,
 				121F8B78223ED597005BB609 /* ListOrders */,
 				121F8B65223DD1F1005BB609 /* CreateOrder */,
 			);
@@ -231,6 +250,19 @@
 				121F8B94223EE23B005BB609 /* OrdersMemStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		121F8B97223F3906005BB609 /* ShowOrder */ = {
+			isa = PBXGroup;
+			children = (
+				121F8B98223F3957005BB609 /* ShowOrderPresenter.swift */,
+				121F8B99223F3957005BB609 /* ShowOrderWorker.swift */,
+				121F8B9A223F3957005BB609 /* ShowOrderRouter.swift */,
+				121F8B9B223F3957005BB609 /* ShowOrderModels.swift */,
+				121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */,
+				121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */,
+			);
+			path = ShowOrder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,18 +398,24 @@
 			files = (
 				121F8B85223ED5DE005BB609 /* ListOrdersModels.swift in Sources */,
 				121F8B87223ED5DE005BB609 /* ListOrdersViewController.swift in Sources */,
+				121F8BA2223F3957005BB609 /* ShowOrderRouter.swift in Sources */,
 				121F8B91223EDCB5005BB609 /* Order.swift in Sources */,
 				121F8B83223ED5DE005BB609 /* ListOrdersRouter.swift in Sources */,
 				121F8B81223ED5DE005BB609 /* ListOrdersWorker.swift in Sources */,
 				121F8B72223DD2BD005BB609 /* CreateOrderModels.swift in Sources */,
 				121F8B76223DD2BD005BB609 /* CreateOrderInteractor.swift in Sources */,
 				121F8B6E223DD2BD005BB609 /* CreateOrderWorker.swift in Sources */,
+				121F8BA0223F3957005BB609 /* ShowOrderWorker.swift in Sources */,
 				121F8B74223DD2BD005BB609 /* CreateOrderViewController.swift in Sources */,
+				121F8BA4223F3957005BB609 /* ShowOrderModels.swift in Sources */,
 				121F8B39223DD183005BB609 /* ViewController.swift in Sources */,
+				121F8B9E223F3957005BB609 /* ShowOrderPresenter.swift in Sources */,
 				121F8B70223DD2BD005BB609 /* CreateOrderRouter.swift in Sources */,
 				121F8B7F223ED5DE005BB609 /* ListOrdersPresenter.swift in Sources */,
+				121F8BA8223F3957005BB609 /* ShowOrderInteractor.swift in Sources */,
 				121F8B37223DD182005BB609 /* AppDelegate.swift in Sources */,
 				121F8B6C223DD2BD005BB609 /* CreateOrderPresenter.swift in Sources */,
+				121F8BA6223F3957005BB609 /* ShowOrderViewController.swift in Sources */,
 				121F8B8D223ED9EE005BB609 /* OrdersWorker.swift in Sources */,
 				121F8B95223EE23B005BB609 /* OrdersMemStore.swift in Sources */,
 				121F8B89223ED5DE005BB609 /* ListOrdersInteractor.swift in Sources */,
@@ -391,7 +429,11 @@
 				121F8B8A223ED5DE005BB609 /* ListOrdersInteractor.swift in Sources */,
 				121F8B4C223DD188005BB609 /* CleanStoreTests.swift in Sources */,
 				121F8B75223DD2BD005BB609 /* CreateOrderViewController.swift in Sources */,
+				121F8BA1223F3957005BB609 /* ShowOrderWorker.swift in Sources */,
 				121F8B86223ED5DE005BB609 /* ListOrdersModels.swift in Sources */,
+				121F8B9F223F3957005BB609 /* ShowOrderPresenter.swift in Sources */,
+				121F8BA9223F3957005BB609 /* ShowOrderInteractor.swift in Sources */,
+				121F8BA3223F3957005BB609 /* ShowOrderRouter.swift in Sources */,
 				121F8B88223ED5DE005BB609 /* ListOrdersViewController.swift in Sources */,
 				121F8B6F223DD2BD005BB609 /* CreateOrderWorker.swift in Sources */,
 				121F8B73223DD2BD005BB609 /* CreateOrderModels.swift in Sources */,
@@ -402,7 +444,9 @@
 				121F8B84223ED5DE005BB609 /* ListOrdersRouter.swift in Sources */,
 				121F8B77223DD2BD005BB609 /* CreateOrderInteractor.swift in Sources */,
 				121F8B92223EDCB5005BB609 /* Order.swift in Sources */,
+				121F8BA5223F3957005BB609 /* ShowOrderModels.swift in Sources */,
 				121F8B8E223ED9EE005BB609 /* OrdersWorker.swift in Sources */,
+				121F8BA7223F3957005BB609 /* ShowOrderViewController.swift in Sources */,
 				121F8B80223ED5DE005BB609 /* ListOrdersPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
