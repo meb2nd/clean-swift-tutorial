@@ -857,7 +857,7 @@
         <!--Show Order-->
         <scene sceneID="cq3-Ad-m24">
             <objects>
-                <viewController id="Jdf-qj-po3" sceneMemberID="viewController">
+                <viewController id="Jdf-qj-po3" customClass="ShowOrderViewController" customModule="CleanStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xzx-Ra-xzI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -948,6 +948,13 @@
                     <navigationItem key="navigationItem" title="Show Order" id="oi5-L1-kgP">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="0pf-CG-vbz"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="orderDateLabel" destination="XEl-ll-k5m" id="Pzo-6J-pFs"/>
+                        <outlet property="orderEmailLabel" destination="ZPs-f0-Fbc" id="OnT-19-uXU"/>
+                        <outlet property="orderIDLabel" destination="6BG-ne-knj" id="7Oa-kt-MD1"/>
+                        <outlet property="orderNameLabel" destination="JhP-lA-Ry7" id="FTO-nF-YqV"/>
+                        <outlet property="orderTotalLabel" destination="D10-cB-0lW" id="Bvf-3u-UJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2Y-aW-YCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

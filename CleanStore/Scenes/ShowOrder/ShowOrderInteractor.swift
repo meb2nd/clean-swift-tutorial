@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ShowOrderBusinessLogic {
-    func doSomething(request: ShowOrder.Something.Request)
+    func getOrder(request: ShowOrder.GetOrder.Request)
 }
 
 protocol ShowOrderDataStore {
@@ -22,16 +22,13 @@ protocol ShowOrderDataStore {
 
 class ShowOrderInteractor: ShowOrderBusinessLogic, ShowOrderDataStore {
     var presenter: ShowOrderPresentationLogic?
-    var worker: ShowOrderWorker?
-    //var name: String = ""
+    var order: Order!
     
-    // MARK: Do something
+    // MARK: Get Order
     
-    func doSomething(request: ShowOrder.Something.Request) {
-        worker = ShowOrderWorker()
-        worker?.doSomeWork()
+    func getOrder(request: ShowOrder.GetOrder.Request) {
         
-        let response = ShowOrder.Something.Response()
-        presenter?.presentSomething(response: response)
+        let response = ShowOrder.GetOrder.Response(order: order)
+        presenter?.presentOrder(response: response)
     }
 }

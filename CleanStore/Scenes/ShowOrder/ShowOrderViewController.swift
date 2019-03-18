@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ShowOrderDisplayLogic: class {
-    func displaySomething(viewModel: ShowOrder.Something.ViewModel)
+    func displaySomething(viewModel: ShowOrder.GetOrder.ViewModel)
 }
 
 class ShowOrderViewController: UIViewController, ShowOrderDisplayLogic {
@@ -60,21 +60,33 @@ class ShowOrderViewController: UIViewController, ShowOrderDisplayLogic {
     
     // MARK: View lifecycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        doSomething()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getOrder()
     }
     
-    // MARK: Do something
+    // MARK: Get Order
     
-    //@IBOutlet weak var nameTextField: UITextField!
+    // MARK:  Outlets
     
-    func doSomething() {
-        let request = ShowOrder.Something.Request()
-        interactor?.doSomething(request: request)
+    @IBOutlet weak var orderIDLabel: UILabel!
+    @IBOutlet weak var orderDateLabel: UILabel!
+    @IBOutlet weak var orderEmailLabel: UILabel!
+    @IBOutlet weak var orderNameLabel: UILabel!
+    @IBOutlet weak var orderTotalLabel: UILabel!
+    
+    func getOrder() {
+        let request = ShowOrder.GetOrder.Request()
+        interactor?.getOrder(request: request)
     }
     
-    func displaySomething(viewModel: ShowOrder.Something.ViewModel) {
-        //nameTextField.text = viewModel.name
+    func displaySomething(viewModel: ShowOrder.GetOrder.ViewModel) {
+        
+        let displayedOrder = viewModel.displayedOrder
+        orderIDLabel.text = displayedOrder.id
+        orderDateLabel.text = displayedOrder.date
+        orderEmailLabel.text = displayedOrder.email
+        orderNameLabel.text = displayedOrder.name
+        orderTotalLabel.text = displayedOrder.total
     }
 }

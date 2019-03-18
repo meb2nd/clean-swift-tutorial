@@ -15,12 +15,24 @@ import UIKit
 enum ShowOrder {
     // MARK: Use cases
     
-    enum Something {
+    enum GetOrder {
         struct Request {
         }
         struct Response {
+            var order: Order
         }
         struct ViewModel {
+            
+            struct DisplayedOrder
+            {
+                var id: String
+                var date: String
+                var email: String
+                var name: String
+                var total: String
+            }
+            
+            var displayedOrder: DisplayedOrder
         }
     }
 }
