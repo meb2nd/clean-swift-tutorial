@@ -16,6 +16,7 @@ protocol CreateOrderBusinessLogic {
     var shippingMethods: [String] { get }
     func formatExpirationDate(request: CreateOrder.FormatExpirationDate.Request)
     func doSomething(request: CreateOrder.Something.Request)
+    func createOrder(request: CreateOrder.CreateOrder.Request)
 }
 
 protocol CreateOrderDataStore {
@@ -51,5 +52,10 @@ class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore {
         // For doesn't do anything -- may add validation logic later (e.g. date is not in the past)
         let response = CreateOrder.FormatExpirationDate.Response(date: request.date)
         presenter?.presentExpirationDate(response: response)
+    }
+    
+    // MARK: Create Order
+    func createOrder(request: CreateOrder.CreateOrder.Request) {
+        
     }
 }

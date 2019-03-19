@@ -723,10 +723,32 @@
                             <outlet property="delegate" destination="viC-AM-ROS" id="gQ5-fh-wzq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Create Order" id="Hr9-YV-zWT"/>
+                    <navigationItem key="navigationItem" title="Create Order" id="Hr9-YV-zWT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jKm-KG-zeB">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="viC-AM-ROS" id="oGR-8M-SoQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="billingAddressCityTextField" destination="yLI-m1-DlQ" id="Srj-2G-NTb"/>
+                        <outlet property="billingAddressStateTextField" destination="jDV-AJ-GIE" id="6sZ-rP-nMQ"/>
+                        <outlet property="billingAddressStreet1TextField" destination="L8r-ux-GuQ" id="phy-Vl-9Y5"/>
+                        <outlet property="billingAddressStreet2TextField" destination="djb-0u-91e" id="ziR-ie-wPg"/>
+                        <outlet property="billingAddressZIPTextField" destination="6iF-4x-Rrf" id="vh0-s0-3tK"/>
+                        <outlet property="ccvTextField" destination="lqW-aM-5Yn" id="kRi-4W-34D"/>
+                        <outlet property="creditCardNumberTextField" destination="KId-V7-SH4" id="Xol-Fa-KZM"/>
+                        <outlet property="emailTextField" destination="RiV-bI-1JR" id="f2D-ca-ZWu"/>
                         <outlet property="expirationDatePicker" destination="NRu-dP-LsP" id="jau-MO-BDU"/>
                         <outlet property="expirationDateTextField" destination="tPU-FB-BPS" id="bbJ-gh-Rd8"/>
+                        <outlet property="firstNameTextField" destination="BNd-2P-bDT" id="IkX-Ec-Dhy"/>
+                        <outlet property="lastNameTextField" destination="7ev-Cd-Qh2" id="zYH-Gk-C0S"/>
+                        <outlet property="phoneTextField" destination="Nz5-ir-R21" id="G5U-Na-met"/>
+                        <outlet property="shipmentAddressCityTextField" destination="gLp-LQ-KfX" id="tH2-VT-cen"/>
+                        <outlet property="shipmentAddressStateTextField" destination="tqd-rg-lO2" id="wDe-Wf-xq9"/>
+                        <outlet property="shipmentAddressStreet1TextField" destination="Zgy-fg-bq3" id="45A-Wp-qNP"/>
+                        <outlet property="shipmentAddressStreet2TextField" destination="FZu-LJ-k0J" id="mpz-Nq-My1"/>
+                        <outlet property="shipmentAddressZIPTextField" destination="GWQ-uE-QjU" id="HOv-kR-eYd"/>
                         <outlet property="shippingMethodPicker" destination="e9d-Vs-UgV" id="dW7-x8-MKb"/>
                         <outlet property="shippingMethodTextField" destination="fkv-MQ-aMV" id="qsW-xg-i4B"/>
                         <outletCollection property="textFields" destination="BNd-2P-bDT" collectionClass="NSMutableArray" id="BNA-gy-8TH"/>

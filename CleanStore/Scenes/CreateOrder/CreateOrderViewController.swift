@@ -113,6 +113,71 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
         //nameTextField.text = viewModel.name
     }
     
+    // MARK: - Create order
+    
+    // MARK: Contact info
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    // MARK: Payment info
+    @IBOutlet weak var billingAddressStreet1TextField: UITextField!
+    @IBOutlet weak var billingAddressStreet2TextField: UITextField!
+    @IBOutlet weak var billingAddressCityTextField: UITextField!
+    @IBOutlet weak var billingAddressStateTextField: UITextField!
+    @IBOutlet weak var billingAddressZIPTextField: UITextField!
+    
+    @IBOutlet weak var creditCardNumberTextField: UITextField!
+    @IBOutlet weak var ccvTextField: UITextField!
+    
+    // MARK: Shipping info
+    @IBOutlet weak var shipmentAddressStreet1TextField: UITextField!
+    @IBOutlet weak var shipmentAddressStreet2TextField: UITextField!
+    @IBOutlet weak var shipmentAddressCityTextField: UITextField!
+    @IBOutlet weak var shipmentAddressStateTextField: UITextField!
+    @IBOutlet weak var shipmentAddressZIPTextField: UITextField!
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        // MARK: Contact info
+        let firstName = firstNameTextField.text!
+        let lastName = lastNameTextField.text!
+        let phone = phoneTextField.text!
+        let email = emailTextField.text!
+        // MARK: Payment info
+        let billingAddressStreet1 = billingAddressStreet1TextField.text!
+        let billingAddressStreet2 = billingAddressStreet2TextField.text!
+        let billingAddressCity = billingAddressCityTextField.text!
+        let billingAddressState = billingAddressStateTextField.text!
+        let billingAddressZIP = billingAddressZIPTextField.text!
+        let paymentMethodCreditCardNumber = creditCardNumberTextField.text!
+        let paymentMethodCVV = ccvTextField.text!
+        let paymentMethodExpirationDate = expirationDatePicker.date
+        let paymentMethodExpirationDateString = ""
+        // MARK: Shipping info
+        let shipmentAddressStreet1 = shipmentAddressStreet1TextField.text!
+        let shipmentAddressStreet2 = shipmentAddressStreet2TextField.text!
+        let shipmentAddressCity = shipmentAddressCityTextField.text!
+        let shipmentAddressState = shipmentAddressStateTextField.text!
+        let shipmentAddressZIP = shipmentAddressZIPTextField.text!
+        let shipmentMethodSpeed = shippingMethodPicker.selectedRow(inComponent: 0)
+        let shipmentMethodSpeedString = ""
+        // MARK: Misc
+        let id: String? = nil
+        let date = Date()
+        let total = NSDecimalNumber.notANumber
+        let request = CreateOrder.CreateOrder.Request(orderFormFields:
+            CreateOrder.OrderFormFields(firstName: firstName, lastName: lastName, phone: phone, email: email, billingAddressStreet1: billingAddressStreet1,
+                billingAddressStreet2: billingAddressStreet2,
+                billingAddressCity: billingAddressCity, billingAddressState:
+                billingAddressState, billingAddressZIP: billingAddressZIP, paymentMethodCreditCardNumber: paymentMethodCreditCardNumber, paymentMethodCVV: paymentMethodCVV, paymentMethodExpirationDate: paymentMethodExpirationDate, paymentMethodExpirationDateString: paymentMethodExpirationDateString, shipmentAddressStreet1: shipmentAddressStreet1,
+                                            shipmentAddressStreet2: shipmentAddressStreet2, shipmentAddressCity:
+                shipmentAddressCity, shipmentAddressState: shipmentAddressState,
+                                     shipmentAddressZIP: shipmentAddressZIP, shipmentMethodSpeed: shipmentMethodSpeed, shipmentMethodSpeedString: shipmentMethodSpeedString,
+                                                  id: id, date: date, total: total))
+        interactor?.createOrder(request: request)
+    }
+    
     // MARK: CreateOrderViewController: UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
