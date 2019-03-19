@@ -17,7 +17,7 @@ protocol ShowOrderBusinessLogic {
 }
 
 protocol ShowOrderDataStore {
-    //var name: String { get set }
+    var order: Order! { get set }
 }
 
 class ShowOrderInteractor: ShowOrderBusinessLogic, ShowOrderDataStore {

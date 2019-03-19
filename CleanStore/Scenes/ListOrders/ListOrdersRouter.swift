@@ -41,6 +41,21 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     //  }
     //}
     
+    func routeToCreateOrder(segue: UIStoryboardSegue?) {
+        let destinationVC = segue!.destination as! CreateOrderViewController
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToCreateOrder(source: dataStore!, destination: &destinationDS)
+        navigateToCreateOrder(source: viewController!, destination:
+            destinationVC)
+    }
+    
+    func routeToShowOrder(segue: UIStoryboardSegue?) {
+        let destinationVC = segue!.destination as! ShowOrderViewController
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+        navigateToShowOrder(source: viewController!, destination: destinationVC)
+    }
+    
     // MARK: Navigation
     
     //func navigateToSomewhere(source: ListOrdersViewController, destination: SomewhereViewController)
@@ -48,10 +63,24 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     //  source.show(destination, sender: nil)
     //}
     
+    func navigateToCreateOrder(source: ListOrdersViewController, destination: CreateOrderViewController) {
+    }
+    
+    func navigateToShowOrder(source: ListOrdersViewController, destination: ShowOrderViewController) {
+    }
+    
     // MARK: Passing data
     
     //func passDataToSomewhere(source: ListOrdersDataStore, destination: inout SomewhereDataStore)
     //{
     //  destination.name = source.name
     //}
+    
+    func passDataToCreateOrder(source: ListOrdersDataStore, destination: inout CreateOrderDataStore) {
+    }
+    
+    func passDataToShowOrder(source: ListOrdersDataStore, destination: inout ShowOrderDataStore) {
+        let selectedRow = viewController?.tableView.indexPathForSelectedRow?.row
+        destination.order = source.orders?[selectedRow!]
+    }
 }

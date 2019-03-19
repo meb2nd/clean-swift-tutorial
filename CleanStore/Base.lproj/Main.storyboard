@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PGy-64-F5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dCI-dY-fxw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -769,7 +769,7 @@
                     </connections>
                 </pickerView>
             </objects>
-            <point key="canvasLocation" x="1488.8" y="-602.24887556221893"/>
+            <point key="canvasLocation" x="2300" y="-618"/>
         </scene>
         <!--List Orders-->
         <scene sceneID="hxO-nl-VkH">
@@ -780,7 +780,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="OrderTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Zm3-Q7-zMB" detailTextLabel="Cc4-O7-gSB" style="IBUITableViewCellStyleValue1" id="dO4-XW-0J5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="OrderTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderTableViewCell" textLabel="Zm3-Q7-zMB" detailTextLabel="Cc4-O7-gSB" style="IBUITableViewCellStyleValue1" id="dO4-XW-0J5">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dO4-XW-0J5" id="GKo-r1-YRK">
@@ -803,6 +803,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Jdf-qj-po3" kind="show" identifier="listOrdersRouteToShowOrder" id="KHP-WY-3Oy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -811,30 +814,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="List Orders" id="v9J-uf-78h">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gwi-NO-VGm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gwi-NO-VGm">
+                            <connections>
+                                <segue destination="viC-AM-ROS" kind="show" identifier="listOrdersRouteToCreateOrder" id="LP0-Sp-ftN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zG-en-oFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1489" y="179"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Yrt-2n-k8f">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PGy-64-F5n" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zkp-bP-LiO">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="viC-AM-ROS" kind="relationship" relationship="rootViewController" id="oc3-gr-fEq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7MG-Iv-Fzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="549.60000000000002" y="-602.24887556221893"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wvd-8u-45M">
@@ -946,7 +935,11 @@
                         <viewLayoutGuide key="safeArea" id="v4j-5J-1hQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Show Order" id="oi5-L1-kgP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="0pf-CG-vbz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="0pf-CG-vbz">
+                            <connections>
+                                <segue destination="viC-AM-ROS" kind="show" identifier="showOrderRouteToCreateOrder" id="ze4-Jk-yd5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="orderDateLabel" destination="XEl-ll-k5m" id="Pzo-6J-pFs"/>
@@ -958,25 +951,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W2Y-aW-YCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488.8" y="880.20989505247383"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eA5-Pl-tDH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Th-ei-DzS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cmm-hI-AcU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Jdf-qj-po3" kind="relationship" relationship="rootViewController" id="HjS-cL-3uz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o0g-Hy-RvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="561" y="882"/>
+            <point key="canvasLocation" x="2702" y="597"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LP0-Sp-ftN"/>
+    </inferredMetricsTieBreakers>
 </document>

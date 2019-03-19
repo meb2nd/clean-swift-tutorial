@@ -19,13 +19,14 @@ protocol CreateOrderBusinessLogic {
 }
 
 protocol CreateOrderDataStore {
-    //var name: String { get set }
+    var orderToEdit: Order? { get set }
 }
 
 class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore {
     
     var presenter: CreateOrderPresentationLogic?
     var worker: CreateOrderWorker?
+    var orderToEdit: Order?
     var shippingMethods = [
         ShipmentMethod(speed: .Standard).toString(),
         ShipmentMethod(speed: .OneDay).toString(),

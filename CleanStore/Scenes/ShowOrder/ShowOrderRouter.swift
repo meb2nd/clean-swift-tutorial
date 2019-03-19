@@ -41,6 +41,13 @@ class ShowOrderRouter: NSObject, ShowOrderRoutingLogic, ShowOrderDataPassing {
     //  }
     //}
     
+    func routeToEditOrder(segue: UIStoryboardSegue?) {
+        let destinationVC = segue!.destination as! CreateOrderViewController
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToEditOrder(source: dataStore!, destination: &destinationDS)
+        navigateToEditOrder(source: viewController!, destination: destinationVC)
+    }
+    
     // MARK: Navigation
     
     //func navigateToSomewhere(source: ShowOrderViewController, destination: SomewhereViewController)
@@ -48,10 +55,18 @@ class ShowOrderRouter: NSObject, ShowOrderRoutingLogic, ShowOrderDataPassing {
     //  source.show(destination, sender: nil)
     //}
     
+    func navigateToEditOrder(source: ShowOrderViewController, destination: CreateOrderViewController) {
+    }
+    
     // MARK: Passing data
     
     //func passDataToSomewhere(source: ShowOrderDataStore, destination: inout SomewhereDataStore)
     //{
     //  destination.name = source.name
     //}
+    
+    func passDataToEditOrder(source: ShowOrderDataStore, destination: inout CreateOrderDataStore)
+    {
+        destination.orderToEdit = source.order
+    }
 }

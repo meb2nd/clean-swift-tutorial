@@ -17,7 +17,7 @@ protocol ListOrdersBusinessLogic {
 }
 
 protocol ListOrdersDataStore {
-    //var name: String { get set }
+    var orders: [Order]? { get }
 }
 
 class ListOrdersInteractor: ListOrdersBusinessLogic, ListOrdersDataStore {
