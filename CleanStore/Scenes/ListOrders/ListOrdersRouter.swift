@@ -13,7 +13,8 @@
 import UIKit
 
 @objc protocol ListOrdersRoutingLogic {
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func routeToCreateOrder(segue: UIStoryboardSegue?)
+    func routeToShowOrder(segue: UIStoryboardSegue?)
 }
 
 protocol ListOrdersDataPassing {

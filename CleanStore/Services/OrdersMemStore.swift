@@ -8,7 +8,7 @@
 
 import Foundation
 
-class OrdersMemStore: OrdersStoreProtocol {
+class OrdersMemStore: OrdersStoreProtocol, OrdersStoreUtilityProtocol {
     // MARK: - Data
     static var billingAddress = Address(street1: "1 Infinite Loop",
                                         street2: "", city: "Cupertino", state: "CA", zip: "95014")
@@ -32,4 +32,49 @@ class OrdersMemStore: OrdersStoreProtocol {
     func fetchOrders(completionHandler: @escaping (() throws -> [Order]) -> Void) {
         completionHandler { return type(of: self).orders }
     }
+    
+    func createOrder(orderToCreate: Order, completionHandler: @escaping (() throws -> Order?) -> Void) {
+        
+        var order = orderToCreate
+        generateOrderID(order: &order)
+        calculateOrderTotal(order: &order)
+        type(of: self).orders.append(order)
+        completionHandler { return order }
+    }
+    
+    func updateOrder(orderToUpdate: Order, completionHandler: @escaping (() throws -> Order?) -> Void) {
+        if let index = indexOfOrderWithID(id: orderToUpdate.id) {
+            type(of: self).orders[index] = orderToUpdate
+            let order = type(of: self).orders[index]
+            completionHandler { return order }
+        } else {
+            completionHandler { throw OrdersStoreError.CannotUpdate("Cannot fetch order with id \(String(describing: orderToUpdate.id)) to update") }
+            }
+        }
+    
+    // MARK: - Convenience methods
+    
+    private func indexOfOrderWithID(id: String?) -> Int?
+    {
+        return type(of: self).orders.index { return $0.id == id }
+    }
+    
+}
+
+protocol OrdersStoreUtilityProtocol {}
+
+extension OrdersStoreUtilityProtocol {
+    
+    func generateOrderID(order: inout Order) {
+        
+        guard order.id == nil else { return }
+        order.id = "\(arc4random())"
+    }
+    
+    func calculateOrderTotal(order: inout Order) {
+        
+        guard order.total == NSDecimalNumber.notANumber else { return }
+        order.total = NSDecimalNumber.one
+    }
+    
 }

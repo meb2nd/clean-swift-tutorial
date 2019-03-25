@@ -13,7 +13,8 @@
 import UIKit
 
 @objc protocol CreateOrderRoutingLogic {
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func routeToListOrders(segue: UIStoryboardSegue?)
+    func routeToShowOrder(segue: UIStoryboardSegue?)
 }
 
 protocol CreateOrderDataPassing {
@@ -21,6 +22,7 @@ protocol CreateOrderDataPassing {
 }
 
 class CreateOrderRouter: NSObject, CreateOrderRoutingLogic, CreateOrderDataPassing {
+    
     weak var viewController: CreateOrderViewController?
     var dataStore: CreateOrderDataStore?
     
@@ -47,6 +49,14 @@ class CreateOrderRouter: NSObject, CreateOrderRoutingLogic, CreateOrderDataPassi
     //{
     //  source.show(destination, sender: nil)
     //}
+    
+    func routeToListOrders(segue: UIStoryboardSegue?) {
+        
+    }
+    
+    func routeToShowOrder(segue: UIStoryboardSegue?) {
+        
+    }
     
     // MARK: Passing data
     

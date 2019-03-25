@@ -56,6 +56,19 @@ enum CreateOrder {
         }
     }
     
+    // MARK: Edit Order
+    
+    enum EditOrder {
+        struct Request {
+        }
+        struct Response {
+            var order: Order
+        }
+        struct ViewModel {
+            var orderFormFields: OrderFormFields
+        }
+    }
+    
     // MARK: Format Expiration Date
     
     enum FormatExpirationDate {
@@ -75,6 +88,23 @@ enum CreateOrder {
     // MARK: Create Order
     
     enum CreateOrder {
+        struct Request
+        {
+            var orderFormFields: OrderFormFields
+        }
+        struct Response
+        {
+            var order: Order?
+        }
+        struct ViewModel
+        {
+            var order: Order?
+        }
+    }
+    
+    // MARK: Update Order
+    
+    enum UpdateOrder {
         struct Request
         {
             var orderFormFields: OrderFormFields
