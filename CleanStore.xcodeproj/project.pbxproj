@@ -137,6 +137,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12060D5F224B0C1B00044AF6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				12060D61224B0C4C00044AF6 /* ShowOrder */,
+				12060D60224B0C3300044AF6 /* ListOrders */,
+				12060D62224B0C6800044AF6 /* CreateOrder */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		12060D60224B0C3300044AF6 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ListOrders;
+			path = "../New Group/ListOrders";
+			sourceTree = "<group>";
+		};
+		12060D61224B0C4C00044AF6 /* ShowOrder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShowOrder;
+			sourceTree = "<group>";
+		};
+		12060D62224B0C6800044AF6 /* CreateOrder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateOrder;
+			sourceTree = "<group>";
+		};
 		121F8B2A223DD182005BB609 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +209,7 @@
 		121F8B4A223DD188005BB609 /* CleanStoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				12060D5F224B0C1B00044AF6 /* Scenes */,
 				121F8B4B223DD188005BB609 /* CleanStoreTests.swift */,
 				121F8B4D223DD188005BB609 /* Info.plist */,
 			);

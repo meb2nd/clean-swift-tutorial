@@ -51,10 +51,16 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     }
     
     func routeToShowOrder(segue: UIStoryboardSegue?) {
-        let destinationVC = segue!.destination as! ShowOrderViewController
-        var destinationDS = destinationVC.router!.dataStore!
-        passDataToShowOrder(source: dataStore!, destination: &destinationDS)
-        navigateToShowOrder(source: viewController!, destination: destinationVC)
+        if let segue = segue {
+            let destinationVC = segue.destination as! ShowOrderViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+        } else {
+            let destinationVC = viewController?.storyboard?.instantiateViewController(withIdentifier: "ShowOrderViewController") as! ShowOrderViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+            navigateToShowOrder(source: viewController!, destination: destinationVC)
+        }
     }
     
     // MARK: Navigation
@@ -68,6 +74,7 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     }
     
     func navigateToShowOrder(source: ListOrdersViewController, destination: ShowOrderViewController) {
+        source.show(destination, sender: nil)
     }
     
     // MARK: Passing data
