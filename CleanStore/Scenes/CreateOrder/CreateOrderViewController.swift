@@ -14,7 +14,6 @@ import UIKit
 
 protocol CreateOrderDisplayLogic: class {
     func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel)
-    func displaySomething(viewModel: CreateOrder.Something.ViewModel)
     func displayCreatedOrder(viewModel: CreateOrder.CreateOrder.ViewModel)
     func displayOrderToEdit(viewModel: CreateOrder.EditOrder.ViewModel)
     func displayUpdatedOrder(viewModel: CreateOrder.UpdateOrder.ViewModel)
@@ -128,15 +127,6 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic 
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(alertAction)
         showDetailViewController(alertController, sender: nil)
-    }
-    
-    func doSomething() {
-        let request = CreateOrder.Something.Request()
-        interactor?.doSomething(request: request)
-    }
-    
-    func displaySomething(viewModel: CreateOrder.Something.ViewModel) {
-        //nameTextField.text = viewModel.name
     }
     
     // MARK: - Create order

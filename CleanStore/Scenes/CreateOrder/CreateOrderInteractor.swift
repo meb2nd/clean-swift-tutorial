@@ -16,7 +16,6 @@ protocol CreateOrderBusinessLogic {
     var shippingMethods: [String] { get }
     var orderToEdit: Order? { get }
     func formatExpirationDate(request: CreateOrder.FormatExpirationDate.Request)
-    func doSomething(request: CreateOrder.Something.Request)
     func createOrder(request: CreateOrder.CreateOrder.Request)
     func showOrderToEdit(request: CreateOrder.EditOrder.Request)
     func updateOrder(request: CreateOrder.UpdateOrder.Request)
@@ -39,16 +38,6 @@ class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore {
         ShipmentMethod(speed: .TwoDay).toString()
     ]
     //var name: String = ""
-    
-    // MARK: Do something
-    
-    func doSomething(request: CreateOrder.Something.Request) {
-        worker = CreateOrderWorker()
-        worker?.doSomeWork()
-        
-        let response = CreateOrder.Something.Response()
-        presenter?.presentSomething(response: response)
-    }
     
     // MARK: Format Expiration Date
     

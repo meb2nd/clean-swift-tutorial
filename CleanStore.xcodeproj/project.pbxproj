@@ -61,6 +61,10 @@
 		121F8BA7223F3957005BB609 /* ShowOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */; };
 		121F8BA8223F3957005BB609 /* ShowOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */; };
 		121F8BA9223F3957005BB609 /* ShowOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */; };
+		12F520C5224C64C300CAA754 /* CreateOrderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C1224C64C300CAA754 /* CreateOrderViewControllerTests.swift */; };
+		12F520C6224C64C300CAA754 /* CreateOrderInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C2224C64C300CAA754 /* CreateOrderInteractorTests.swift */; };
+		12F520C7224C64C300CAA754 /* CreateOrderWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C3224C64C300CAA754 /* CreateOrderWorkerTests.swift */; };
+		12F520C8224C64C300CAA754 /* CreateOrderPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C4224C64C300CAA754 /* CreateOrderPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,10 @@
 		121F8B9B223F3957005BB609 /* ShowOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderModels.swift; sourceTree = "<group>"; };
 		121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderViewController.swift; sourceTree = "<group>"; };
 		121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderInteractor.swift; sourceTree = "<group>"; };
+		12F520C1224C64C300CAA754 /* CreateOrderViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewControllerTests.swift; sourceTree = "<group>"; };
+		12F520C2224C64C300CAA754 /* CreateOrderInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderInteractorTests.swift; sourceTree = "<group>"; };
+		12F520C3224C64C300CAA754 /* CreateOrderWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderWorkerTests.swift; sourceTree = "<group>"; };
+		12F520C4224C64C300CAA754 /* CreateOrderPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +186,10 @@
 		12060D62224B0C6800044AF6 /* CreateOrder */ = {
 			isa = PBXGroup;
 			children = (
+				12F520C1224C64C300CAA754 /* CreateOrderViewControllerTests.swift */,
+				12F520C2224C64C300CAA754 /* CreateOrderInteractorTests.swift */,
+				12F520C3224C64C300CAA754 /* CreateOrderWorkerTests.swift */,
+				12F520C4224C64C300CAA754 /* CreateOrderPresenterTests.swift */,
 			);
 			path = CreateOrder;
 			sourceTree = "<group>";
@@ -473,17 +485,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F520C8224C64C300CAA754 /* CreateOrderPresenterTests.swift in Sources */,
 				121F8B8A223ED5DE005BB609 /* ListOrdersInteractor.swift in Sources */,
 				121F8B4C223DD188005BB609 /* CleanStoreTests.swift in Sources */,
 				121F8B75223DD2BD005BB609 /* CreateOrderViewController.swift in Sources */,
 				121F8BA1223F3957005BB609 /* ShowOrderWorker.swift in Sources */,
 				121F8B86223ED5DE005BB609 /* ListOrdersModels.swift in Sources */,
+				12F520C5224C64C300CAA754 /* CreateOrderViewControllerTests.swift in Sources */,
+				12F520C7224C64C300CAA754 /* CreateOrderWorkerTests.swift in Sources */,
 				121F8B9F223F3957005BB609 /* ShowOrderPresenter.swift in Sources */,
 				121F8BA9223F3957005BB609 /* ShowOrderInteractor.swift in Sources */,
 				121F8BA3223F3957005BB609 /* ShowOrderRouter.swift in Sources */,
 				121F8B88223ED5DE005BB609 /* ListOrdersViewController.swift in Sources */,
 				121F8B6F223DD2BD005BB609 /* CreateOrderWorker.swift in Sources */,
 				121F8B73223DD2BD005BB609 /* CreateOrderModels.swift in Sources */,
+				12F520C6224C64C300CAA754 /* CreateOrderInteractorTests.swift in Sources */,
 				121F8B6D223DD2BD005BB609 /* CreateOrderPresenter.swift in Sources */,
 				121F8B82223ED5DE005BB609 /* ListOrdersWorker.swift in Sources */,
 				12060D69224B0FBF00044AF6 /* ListOrdersWorkerTests.swift in Sources */,
