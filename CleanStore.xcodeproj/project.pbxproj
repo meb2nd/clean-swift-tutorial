@@ -61,6 +61,8 @@
 		121F8BA7223F3957005BB609 /* ShowOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */; };
 		121F8BA8223F3957005BB609 /* ShowOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */; };
 		121F8BA9223F3957005BB609 /* ShowOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */; };
+		123A1072225CBA01009FEF5D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A1071225CBA01009FEF5D /* String+Localized.swift */; };
+		123A1074225CBC0D009FEF5D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A1073225CBC0D009FEF5D /* Errors.swift */; };
 		12F520C5224C64C300CAA754 /* CreateOrderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C1224C64C300CAA754 /* CreateOrderViewControllerTests.swift */; };
 		12F520C6224C64C300CAA754 /* CreateOrderInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C2224C64C300CAA754 /* CreateOrderInteractorTests.swift */; };
 		12F520C7224C64C300CAA754 /* CreateOrderWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F520C3224C64C300CAA754 /* CreateOrderWorkerTests.swift */; };
@@ -124,6 +126,8 @@
 		121F8B9B223F3957005BB609 /* ShowOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderModels.swift; sourceTree = "<group>"; };
 		121F8B9C223F3957005BB609 /* ShowOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderViewController.swift; sourceTree = "<group>"; };
 		121F8B9D223F3957005BB609 /* ShowOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderInteractor.swift; sourceTree = "<group>"; };
+		123A1071225CBA01009FEF5D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		123A1073225CBC0D009FEF5D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		12F520C1224C64C300CAA754 /* CreateOrderViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewControllerTests.swift; sourceTree = "<group>"; };
 		12F520C2224C64C300CAA754 /* CreateOrderInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderInteractorTests.swift; sourceTree = "<group>"; };
 		12F520C3224C64C300CAA754 /* CreateOrderWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderWorkerTests.swift; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 		121F8B64223DD1A5005BB609 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				123A1071225CBA01009FEF5D /* String+Localized.swift */,
+				123A1073225CBC0D009FEF5D /* Errors.swift */,
 				121F8B97223F3906005BB609 /* ShowOrder */,
 				121F8B78223ED597005BB609 /* ListOrders */,
 				121F8B65223DD1F1005BB609 /* CreateOrder */,
@@ -471,8 +477,10 @@
 				121F8B9E223F3957005BB609 /* ShowOrderPresenter.swift in Sources */,
 				121F8B70223DD2BD005BB609 /* CreateOrderRouter.swift in Sources */,
 				121F8B7F223ED5DE005BB609 /* ListOrdersPresenter.swift in Sources */,
+				123A1074225CBC0D009FEF5D /* Errors.swift in Sources */,
 				121F8BA8223F3957005BB609 /* ShowOrderInteractor.swift in Sources */,
 				121F8B37223DD182005BB609 /* AppDelegate.swift in Sources */,
+				123A1072225CBA01009FEF5D /* String+Localized.swift in Sources */,
 				121F8B6C223DD2BD005BB609 /* CreateOrderPresenter.swift in Sources */,
 				121F8BA6223F3957005BB609 /* ShowOrderViewController.swift in Sources */,
 				121F8B8D223ED9EE005BB609 /* OrdersWorker.swift in Sources */,
